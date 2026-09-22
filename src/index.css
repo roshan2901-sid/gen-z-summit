@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-space {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .font-syne {
+    font-family: 'Syne', sans-serif;
+  }
+  .font-caveat {
+    font-family: 'Caveat', cursive;
+  }
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+  .font-russo {
+    font-family: 'Russo One', sans-serif;
+  }
+  .font-marck {
+    font-family: 'Marck Script', cursive;
+  }
+
+  /* 3D Iced Diamond & Gold Logo Style Text */
+  .text-logo-iced {
+    font-family: 'Russo One', sans-serif;
+    background-image: url('/assets/diamond_pave_seamless.jpg');
+    background-size: 140px 140px;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #F59E0B;
+    filter: drop-shadow(0 2px 0 #B45309) 
+           drop-shadow(0 4px 0 #78350F) 
+           drop-shadow(0 6px 0 #451A03) 
+           drop-shadow(0 10px 25px rgba(245, 158, 11, 0.7));
+  }
+
+  /* 24K Polished Luxury Gold Text */
+  .text-gold-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFF3B0 25%, #E5A93C 60%, #9A6B1F 90%, #5E3D06 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Iced Diamond Sparkle Text */
+  .text-diamond-gradient {
+    background: linear-gradient(180deg, #FFFFFF 20%, #F1F5F9 50%, #CBD5E1 80%, #94A3B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Solid Metallic Chrome */
+  .text-chrome-gold {
+    background: linear-gradient(180deg, #FFFDEB 0%, #FDE047 35%, #D97706 75%, #78350F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Gold & Diamond Glow Effects */
+  .text-glow-gold {
+    text-shadow: 0 0 25px rgba(245, 158, 11, 0.75), 0 0 50px rgba(217, 119, 6, 0.4);
+  }
+
+  .text-glow-diamond {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 35px rgba(226, 232, 240, 0.6);
+  }
+
+  /* Luxury Box Shadows */
+  .glow-box-gold {
+    box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.35), 0 0 15px -3px rgba(245, 158, 11, 0.25);
+  }
+
+  .glow-box-gold-lg {
+    box-shadow: 0 0 60px -5px rgba(245, 158, 11, 0.45), 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+
+  .border-glow-gold {
+    border-color: rgba(245, 158, 11, 0.5);
+    box-shadow: inset 0 0 15px rgba(212, 175, 55, 0.15), 0 0 20px rgba(245, 158, 11, 0.25);
+  }
+
+  /* Obsidian & Gold Radial Backgrounds */
+  .bg-radial-luxury {
+    background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.12) 0%, rgba(18, 15, 8, 0.8) 45%, #050507 85%);
+  }
+
+  .bg-gold-card {
+    background: rgba(14, 14, 18, 0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+}
+
+/* Custom Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #78350f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+@keyframes diamondShimmer {
+  0% {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 25px rgba(245, 158, 11, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 45px rgba(245, 158, 11, 0.6));
+  }
+  100% {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 25px rgba(245, 158, 11, 0.3));
+  }
+}
+
+.animate-diamond-shimmer {
+  animation: diamondShimmer 4s ease-in-out infinite;
+}
+
+@keyframes goldPulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 4s ease-in-out infinite;
+}
