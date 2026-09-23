@@ -1,7 +1,5 @@
 import React from 'react';
 import { Users, Clock, Flame, Volume2, Sparkles } from 'lucide-react';
-import GeneralRegulations from './GeneralRegulations';
-import BookingSection from './BookingSection';
 
 export default function BattleOfBandsSection() {
   const judgingCriteria = [
@@ -31,23 +29,23 @@ export default function BattleOfBandsSection() {
   ];
 
   const stageGear = [
-    {
-      item: '5-Piece Drum Kit',
-      desc: 'Pearl/Yamaha kit with hardware (bring own cymbals & sticks)',
-    },
-    {
-      item: 'Guitar & Bass Amps',
-      desc: 'Marshall / Fender 100W heads + 4x12 cabs + Ampeg Bass Rig',
-    },
-    {
-      item: 'Pro Vocal Mics',
-      desc: '4x Shure SM58 vocal microphones + boom stands',
-    },
-    {
-      item: 'DI Boxes & PA System',
-      desc: 'Active line inputs for keyboard / acoustic instruments & stereo monitor mix',
-    },
-  ];
+  {
+    item: 'Professional Stage & Performance Area',
+    desc: 'Dedicated stage setup with proper performance space for participating bands.',
+  },
+  {
+    item: 'PA & Sound System',
+    desc: 'Venue sound reinforcement system for live performances.',
+  },
+  {
+    item: 'Stage Monitoring',
+    desc: 'Standard stage monitoring setup for performers.',
+  },
+  {
+    item: 'Vocal Microphones',
+    desc: 'Standard microphones available for vocal performances.',
+  }
+];
 
   return (
     <section
@@ -56,17 +54,20 @@ export default function BattleOfBandsSection() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
-        {/* Section Header */}
+        {/* SECTION HEADER */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/50 border border-amber-500/40 text-amber-300 text-xs font-bold uppercase tracking-wider mb-3">
               <Sparkles className="w-3.5 h-3.5 text-yellow-400" />
-              <span>Music Championship Arena • 17 October 2026</span>
+
+              <span>
+                Music Championship Arena • 17 October 2026
+              </span>
             </div>
 
             <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-wider flex items-center gap-3">
               <span className="text-gold-gradient">
-                BATTLE OF THE BANDS
+                MUSIC β
               </span>
 
               <span className="text-xs font-mono font-bold px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/50 text-amber-300">
@@ -79,31 +80,35 @@ export default function BattleOfBandsSection() {
             </p>
           </div>
 
-          <a
-            href="#bob-booking"
-            className="self-start md:self-auto px-7 py-3.5 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:brightness-110 text-black shadow-[0_0_25px_rgba(245,158,11,0.45)] transition-all"
-          >
-            Jump to Music Booking (₹899)
-          </a>
+         <a
+  href="https://app.studenttribe.in/events/genz-summit"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center px-8 py-4 rounded-2xl text-sm font-black uppercase tracking-wide bg-gradient-to-r from-yellow-400 to-orange-500 hover:brightness-110 text-black shadow-[0_0_30px_rgba(245,158,11,0.4)] transition-all"
+>
+  REGISTER FOR MUSIC β — ₹899
+</a>
         </div>
 
-        {/* Main Grid */}
+        {/* MAIN GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
-          {/* Logo & Specs Card */}
+          {/* LOGO & SPECS CARD */}
           <div className="lg:col-span-4 rounded-3xl p-6 bg-[#0e0e14] border border-amber-500/35 shadow-[0_0_30px_rgba(245,158,11,0.15)] flex flex-col items-center justify-between text-center relative overflow-hidden">
 
             <div className="w-full">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_25px_rgba(245,158,11,0.3)] mb-4">
+
+              {/* BATTLE OF THE BANDS LOGO */}
+              <div className="w-full max-w-[520px] mx-auto rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_25px_rgba(245,158,11,0.3)] mb-4 bg-black">
                 <img
                   src="/assets/battle_of_bands_logo.jpg"
                   alt="Battle of the Bands Logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain block"
                 />
               </div>
 
               <h3 className="font-cinzel text-xl font-bold text-white">
-                BATTLE OF THE BANDS
+                MUSIC β
               </h3>
 
               <p className="text-xs text-amber-300/90 font-medium mt-1">
@@ -111,6 +116,7 @@ export default function BattleOfBandsSection() {
               </p>
             </div>
 
+            {/* QUICK SPECS */}
             <div className="w-full grid grid-cols-2 gap-2 mt-6 pt-6 border-t border-zinc-800 text-left">
 
               <div className="p-3 rounded-xl bg-zinc-900/90 border border-amber-500/25">
@@ -140,7 +146,7 @@ export default function BattleOfBandsSection() {
             </div>
           </div>
 
-          {/* Evaluation & Stage Gear */}
+          {/* EVALUATION & STAGE GEAR */}
           <div className="lg:col-span-8 flex flex-col justify-between gap-6">
 
             {/* OFFICIAL EVALUATION RUBRIC */}
@@ -148,7 +154,10 @@ export default function BattleOfBandsSection() {
 
               <h4 className="font-cinzel text-xl font-bold text-white mb-6 flex items-center gap-2">
                 <Flame className="w-5 h-5 text-amber-400" />
-                <span>OFFICIAL EVALUATION RUBRIC</span>
+
+                <span>
+                  OFFICIAL EVALUATION RUBRIC
+                </span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
@@ -170,7 +179,7 @@ export default function BattleOfBandsSection() {
 
               </div>
 
-              {/* Judging Rules */}
+              {/* JUDGING RULES */}
               <div className="mt-6 pt-5 border-t border-zinc-800">
 
                 <h5 className="text-sm font-bold text-white mb-3">
@@ -202,7 +211,10 @@ export default function BattleOfBandsSection() {
 
               <h4 className="font-cinzel text-base font-bold text-white mb-4 flex items-center gap-2">
                 <Volume2 className="w-4 h-4 text-amber-400" />
-                <span>PROVIDED STAGE GEAR & BACKLINE</span>
+
+                <span>
+                  PROVIDED STAGE GEAR & BACKLINE
+                </span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
@@ -228,13 +240,7 @@ export default function BattleOfBandsSection() {
           </div>
         </div>
 
-        {/* GENERAL REGULATIONS FOR MUSIC */}
-        <GeneralRegulations type="music" />
-
-        {/* INLINE BOOKING PORTAL */}
-        <div id="bob-booking">
-          <BookingSection eventKey="bob" />
-        </div>
+        {/* BATTLE OF BANDS BOOKING */}
 
       </div>
     </section>

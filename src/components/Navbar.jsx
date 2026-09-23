@@ -67,7 +67,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
                 : 'text-amber-200/80 hover:text-white hover:bg-amber-950/40'
             }`}
           >
-            <span>Battle of Bands (17 Oct)</span>
+            <span>MUSIC β (17 Oct)</span>
             <span className="text-[10px] font-mono opacity-90 font-black">
               ₹899
             </span>
@@ -178,7 +178,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
                   : 'bg-zinc-900 text-amber-200 border border-zinc-800'
               }`}
             >
-              Battle of Bands (17 Oct • ₹899)
+              MUSIC β (17 Oct • ₹899)
             </button>
 
             <button

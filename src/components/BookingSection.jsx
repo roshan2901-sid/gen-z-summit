@@ -346,7 +346,7 @@ export default function BookingSection({ eventKey = 'danzora' }) {
                   <span>Payable Amount: <strong className="text-white">₹{current.fee}.00</strong></span>
                 </p>
                 <p className="text-[11px] text-zinc-400">
-                  Coordinators: Sai Mithil, Roshan Siddarth, Hujith
+                  Coordinators: Sai Mithil, Roshan Siddarth, Nawaz
                 </p>
               </div>
             </div>

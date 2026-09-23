@@ -1,138 +1,158 @@
 import React from 'react';
-import { Scale, AlertTriangle } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, Zap } from 'lucide-react';
 
-export default function GeneralRegulations({ type = 'dance' }) {
-  const isMusic = type === 'music' || type === 'bob';
+export default function GeneralRegulations() {
+  const regulations = [
+    'Registrations are open from 24 September 2026 to 14 October 2026.',
 
-  const regulations = isMusic
-    ? [
-        'Participation is open to students from any college/institution.',
-        'A band must consist exclusively of students from the same college/institution.',
-        'Cross-college or mixed-institution bands are not permitted.',
-        'Every participant must carry a valid college/student ID card for verification.',
-        'A participant cannot represent more than one band in the competition.',
-        'All registration information must be accurate and verifiable.',
-        'The Organizing Committee reserves the right to verify eligibility and institutional affiliation.',
-        'Participants must respect the dignity and reputation of other bands, institutions, judges, organizers, and the venue.',
-      ]
-    : [
-        'Registrations are open from 22 September 2026 to 14 October 2026.',
-        'Participation is open to students from any college/institution.',
-        'A team must consist exclusively of students from the same college/institution.',
-        'Cross-college or mixed-institution teams are not permitted.',
-        'Teams need not be officially registered dance crews, clubs, or cultural teams. Students may independently form a team specifically for DANZORA’26.',
-        'Each team must consist of 6–25 members.',
-        'Every participant must carry a valid college/student ID card for verification.',
-        'A participant cannot represent more than one team in the competition.',
-        'All registration information must be accurate and verifiable.',
-        'The Organizing Committee reserves the right to verify the eligibility and institutional affiliation of any participant.',
-        'Participants must respect the dignity and reputation of other teams, institutions, judges, organizers, and the venue.',
-      ];
+    'Participation is open to students from any college/institution.',
 
-      const guidelines = [
-  {
-    title: 'Performance Evaluation',
-    items: [
-      'Choreography & Creativity',
-      'Synchronization & Coordination',
-      'Technique & Execution',
-      'Musicality & Rhythm',
-      'Stage Presence & Energy',
-      'Overall Presentation',
-    ],
-  },
-  {
-    title: 'Judging & Penalties',
-    items: [
-      'Time-limit violations may attract deduction of marks or other penalties as determined by the organizers.',
-      'Rule violations may also result in deductions or disqualification.',
-      "The Judging Panel's decision shall be final with respect to competition scoring and qualification.",
-      'Participants shall not directly approach or influence judges regarding scores or results.',
-    ],
-  },
-  {
-    title: 'Safety, Conduct & Property',
-    items: [
-      'Any participant found creating a safety or security concern may be removed from the venue.',
-      'Damage to college/event property caused by a participant or team may result in recovery of the cost and/or disqualification.',
-      'Fighting, abusive language, harassment, intimidation, vandalism, threatening behaviour, or deliberate disruption of the event is strictly prohibited.',
-    ],
-  },
-  {
-    title: 'Music & Technical Requirements',
-    items: [
-      'Any last-minute change to the submitted track shall require approval from the Technical/Organizing Team.',
-      'Participants should carry a backup copy of their music.',
-      'Teams must ensure that their submitted audio file is clear, complete, and compatible with the prescribed technical requirements.',
-    ],
-  },
-  {
-    title: 'Reporting & Qualification',
-    items: [
-      'Reporting time on the event day is strictly 9:30 AM.',
-      'Qualification from Round 1 to Round 2 shall be based on the evaluation of the official judging panel.',
-      'The Organizing Committee may communicate Round 2 reporting instructions through the official communication channels.',
-      'Teams must be prepared to perform whenever their name/number is called by the stage management team.',
-    ],
-  },
-];
+    'A team must consist exclusively of students from the same college/institution.',
+
+    'Cross-college or mixed-institution teams are not permitted.',
+
+    'Teams need not be officially registered dance crews, clubs, or cultural teams. Students may independently form a team specifically for DANZORA’26.',
+
+    'Each team must consist of 6–25 members.',
+
+    'Every participant must carry a valid college/student ID card for verification.',
+
+    'A participant cannot represent more than one team in the competition.',
+
+    'All registration information must be accurate and verifiable.',
+
+    'The Organizing Committee reserves the right to verify the eligibility and institutional affiliation of any participant.',
+
+    'Participants must respect the dignity and reputation of other teams, institutions, judges, organizers, and the venue.',
+  ];
 
   return (
-    <div className="rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#14141c] to-[#0c0c10] border-2 border-amber-500/40 shadow-[0_0_35px_rgba(245,158,11,0.2)]">
+    <section
+      id="general-regulations"
+      className="relative py-16 bg-[#070709] border-t border-amber-500/25"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-zinc-800">
+        {/* =====================================================
+            GENERAL REGULATIONS
+            ===================================================== */}
 
-        <div className="flex items-center gap-3">
+        <div className="rounded-3xl bg-[#0b0b10] border border-amber-500/50 overflow-hidden shadow-[0_0_35px_rgba(245,158,11,0.12)]">
 
-          <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-400/50 flex items-center justify-center text-amber-300">
-            <Scale className="w-5 h-5" />
+          {/* HEADER */}
+          <div className="px-5 sm:px-8 pt-7 pb-6">
+
+            {/* FAIR PLAY PILL */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-950/50 border border-amber-500/60 text-amber-300 text-xs sm:text-sm font-black uppercase tracking-wide mb-4">
+
+              <ShieldCheck className="w-4 h-4" />
+
+              <span>
+                FAIR PLAY &amp; OFFICIAL PROTOCOL
+              </span>
+
+            </div>
+
+            {/* TITLE */}
+            <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-black text-gold-gradient tracking-wide uppercase">
+              GENERAL REGULATIONS
+            </h2>
+
+            <p className="mt-2 text-xs sm:text-sm text-zinc-400">
+              Mandatory regulations for all participating teams.
+            </p>
+
           </div>
 
-          <div>
-            <h4 className="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide">
-              • GENERAL REGULATIONS
-            </h4>
 
-            <p className="text-xs text-zinc-400">
-              Mandatory regulations for all participating {isMusic ? 'bands' : 'Danzora teams'}.
+          {/* REGULATION POINTS */}
+          <div className="px-5 sm:px-8 pb-8 space-y-3">
+
+            {regulations.map((text, index) => (
+              <div
+                key={index}
+                className="p-4 sm:p-5 rounded-xl bg-[#17171c] border border-zinc-800 hover:border-amber-500/40 transition-all flex items-start gap-3 sm:gap-4"
+              >
+
+                {/* NUMBER */}
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-500/20 border border-amber-500/30 flex items-center justify-center flex-shrink-0">
+
+                  <span className="text-[11px] sm:text-xs font-black text-amber-300">
+                    {index + 1}
+                  </span>
+
+                </div>
+
+                {/* TEXT */}
+                <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed pt-1">
+                  {text}
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+
+          {/* COMPLIANCE NOTICE */}
+          <div className="mx-5 sm:mx-8 mb-8 p-4 rounded-xl bg-amber-950/30 border border-amber-700/50 flex items-start gap-3">
+
+            <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+
+            <p className="text-xs sm:text-sm text-amber-200/90 leading-relaxed">
+              Strict compliance is required. The Organizing Committee reserves
+              the right to take appropriate action in case of violations.
             </p>
+
           </div>
 
         </div>
 
-        <span className="px-3 py-1 rounded-full bg-amber-950/80 text-[11px] font-mono font-bold text-amber-300 border border-amber-500/40 w-fit">
-          Official Protocol
-        </span>
 
-      </div>
+        {/* =====================================================
+            CRITICAL SUBMISSION PROTOCOLS
+            ===================================================== */}
 
-      <div className="space-y-3">
+        <div className="mt-5 rounded-2xl px-5 sm:px-6 py-5 bg-[#1d110d] border border-amber-700/60 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
 
-        {regulations.map((text, idx) => (
-          <div
-            key={idx}
-            className="p-4 rounded-xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3 hover:border-amber-500/40 transition-colors"
-          >
-            <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/50 flex items-center justify-center flex-shrink-0 text-amber-300 font-mono text-xs font-bold">
-              {idx + 1}
+          <div className="space-y-1">
+
+            {/* TITLE */}
+            <div className="flex items-center gap-2">
+
+              <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+
+              <h3 className="text-xs sm:text-sm font-black text-white">
+                Critical Submission Protocols:
+              </h3>
+
             </div>
 
-            <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
-              {text}
+            {/* POINTS */}
+            <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed">
+              • Audio tracks must be sent <strong>48 hours prior to the event.</strong>
             </p>
+
+            <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed">
+              • Cross-college participation is <strong>NOT allowed</strong>{' '}
+              (All members must be from the same college).
+            </p>
+
           </div>
-        ))}
+
+
+          {/* STRICT ADHERENCE */}
+          <div className="flex-shrink-0 self-start sm:self-center">
+
+            <span className="inline-flex items-center px-3 py-2 rounded-md bg-amber-950/80 border border-amber-600/70 text-[10px] sm:text-xs font-mono font-bold text-amber-300">
+              Strict Adherence
+            </span>
+
+          </div>
+
+        </div>
 
       </div>
-
-      <div className="mt-5 p-3.5 rounded-xl bg-amber-950/30 border border-amber-800/40 flex items-start gap-3 text-xs text-amber-200/90">
-        <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-
-        <span>
-          Strict compliance is required. The Organizing Committee reserves the right to take appropriate action in case of violations.
-        </span>
-      </div>
-
-    </div>
+    </section>
   );
 }

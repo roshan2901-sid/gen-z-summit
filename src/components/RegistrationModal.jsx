@@ -360,7 +360,7 @@ export default function RegistrationModal({ isOpen, onClose, initialEvent = 'dan
                     Payable Amount: <strong className="text-white">₹{currentEvent.fee}.00</strong>
                   </p>
                   <p className="text-[10px] text-zinc-400">
-                    Coordinators: Sai Mithil, Roshan Siddarth, Hujith
+                    Coordinators: Sai Mithil, Roshan Siddarth, Nawaz
                   </p>
                 </div>
               </div>

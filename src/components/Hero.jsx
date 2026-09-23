@@ -158,7 +158,7 @@ export default function Hero({
 
               </div>
 
-              {/* Updated Subtitle */}
+              {/* Subtitle */}
               <p className="font-syne text-xs sm:text-sm md:text-base font-extrabold tracking-[0.18em] uppercase text-amber-200 mt-2">
                 THE FLAGSHIP EVENT OF NSS
               </p>
@@ -208,7 +208,7 @@ export default function Hero({
 
               </div>
 
-              {/* Action Buttons */}
+              {/* Action Button */}
               <div className="flex flex-wrap items-center gap-4">
 
                 <button
@@ -233,21 +233,16 @@ export default function Hero({
 
             <div className="lg:col-span-5 flex flex-col items-start lg:items-end text-left lg:text-right mt-6 lg:mt-0">
 
-              {/* Updated Cash Bounty */}
-              <a
-                href="#prize-pool"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/75 hover:bg-black/95 border border-amber-400/60 text-amber-300 hover:text-white text-xs sm:text-sm font-bold tracking-wider uppercase mb-5 backdrop-blur-md shadow-[0_0_25px_rgba(245,158,11,0.3)] hover:border-amber-400 hover:scale-105 transition-all group"
+              {/* Overall Cash Bounty */}
+              <div
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/75 border border-amber-400/60 text-amber-300 text-xs sm:text-sm font-bold tracking-wider uppercase mb-5 backdrop-blur-md shadow-[0_0_25px_rgba(245,158,11,0.3)]"
               >
-                <Star className="w-4 h-4 fill-amber-400 text-amber-400 group-hover:rotate-45 transition-transform" />
+                <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
 
                 <span className="tracking-widest font-black text-amber-200">
                   ₹30,000+ CASH BOUNTY
                 </span>
-
-                <span className="text-amber-400 group-hover:translate-x-1 transition-transform">
-                  ›
-                </span>
-              </a>
+              </div>
 
               {/* Tagline */}
               <p className="max-w-xs text-xs sm:text-sm text-zinc-300/90 font-bold uppercase tracking-[0.18em] leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
@@ -292,7 +287,7 @@ export default function Hero({
             }`}
           >
             <Music2 className="w-4 h-4" />
-            <span>Battle of Bands (17 Oct • Music)</span>
+            <span>MUSIC β (17 Oct • Music)</span>
           </button>
 
           {/* Influencers Meet */}
@@ -360,13 +355,13 @@ export default function Hero({
 
               </div>
 
-              {/* Danzora Emblem */}
-              <div className="relative my-2 w-48 h-48 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_30px_rgba(245,158,11,0.35)] group-hover:scale-105 transition-transform duration-300">
+              {/* Danzora Emblem — FULL IMAGE */}
+              <div className="relative my-2 w-full max-w-[360px] rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_30px_rgba(245,158,11,0.35)] group-hover:scale-[1.02] transition-transform duration-300 bg-black">
 
                 <img
                   src="/assets/danzora_logo.jpg"
                   alt="Danzora Dance Championship"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain block"
                 />
 
               </div>
@@ -379,23 +374,13 @@ export default function Hero({
                 Inter-College Dance Championship
               </p>
 
-              {/* Updated Cash Bounty */}
+              {/* Overall Cash Bounty */}
               <div className="w-full my-4 p-3.5 rounded-xl bg-gradient-to-r from-amber-950/40 to-zinc-900 border border-amber-500/30 flex items-center justify-between text-left">
 
-                <div>
-                  <span className="text-[10px] uppercase text-zinc-400 font-semibold tracking-wider">
-                    Cash Bounty
-                  </span>
-
-                  <p className="font-bebas text-2xl font-black text-amber-300 tracking-wide">
-                    ₹30,000+
-                  </p>
-                </div>
+                
 
                 <div className="text-right text-xs text-zinc-300 font-medium">
-                  <p>
-                    Trophy + Certificates
-                  </p>
+                  <p>Trophy + Certificates</p>
                 </div>
 
               </div>
@@ -446,42 +431,32 @@ export default function Hero({
 
               </div>
 
-              {/* Battle of Bands Emblem */}
-              <div className="relative my-2 w-48 h-48 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_30px_rgba(245,158,11,0.35)] group-hover:scale-105 transition-transform duration-300">
+              {/* Battle of Bands Emblem — FULL IMAGE */}
+              <div className="relative my-2 w-full max-w-[360px] rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_30px_rgba(245,158,11,0.35)] group-hover:scale-[1.02] transition-transform duration-300 bg-black">
 
                 <img
                   src="/assets/battle_of_bands_logo.jpg"
                   alt="Battle of the Bands Championship"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain block"
                 />
 
               </div>
 
               <h3 className="font-syne text-2xl font-extrabold text-white mt-3 tracking-wider">
-                BATTLE OF THE BANDS
+                MUSIC β
               </h3>
 
               <p className="text-xs text-amber-300/90 font-semibold uppercase tracking-widest mt-1">
                 Inter-College Music Championship
               </p>
 
-              {/* Updated Cash Bounty */}
+              {/* Overall Cash Bounty */}
               <div className="w-full my-4 p-3.5 rounded-xl bg-gradient-to-r from-amber-950/40 to-zinc-900 border border-amber-500/30 flex items-center justify-between text-left">
 
-                <div>
-                  <span className="text-[10px] uppercase text-zinc-400 font-semibold tracking-wider">
-                    Cash Bounty
-                  </span>
-
-                  <p className="font-bebas text-2xl font-black text-amber-300 tracking-wide">
-                    ₹30,000+
-                  </p>
-                </div>
+               
 
                 <div className="text-right text-xs text-zinc-300 font-medium">
-                  <p>
-                    Trophy + Recognition
-                  </p>
+                  <p>Trophy + Recognition</p>
                 </div>
 
               </div>
@@ -627,6 +602,7 @@ export default function Hero({
           <div className="grid grid-cols-4 gap-2 sm:gap-4">
 
             <div className="p-2 sm:p-3 rounded-xl bg-zinc-900/90 border border-amber-500/30">
+
               <span className="font-bebas text-2xl sm:text-4xl font-bold text-amber-300">
                 {timeLeft.days}
               </span>
@@ -634,9 +610,11 @@ export default function Hero({
               <p className="text-[10px] uppercase tracking-wider text-zinc-400 mt-0.5 font-semibold">
                 Days
               </p>
+
             </div>
 
             <div className="p-2 sm:p-3 rounded-xl bg-zinc-900/90 border border-amber-500/30">
+
               <span className="font-bebas text-2xl sm:text-4xl font-bold text-amber-300">
                 {timeLeft.hours}
               </span>
@@ -644,9 +622,11 @@ export default function Hero({
               <p className="text-[10px] uppercase tracking-wider text-zinc-400 mt-0.5 font-semibold">
                 Hours
               </p>
+
             </div>
 
             <div className="p-2 sm:p-3 rounded-xl bg-zinc-900/90 border border-amber-500/30">
+
               <span className="font-bebas text-2xl sm:text-4xl font-bold text-amber-300">
                 {timeLeft.minutes}
               </span>
@@ -654,9 +634,11 @@ export default function Hero({
               <p className="text-[10px] uppercase tracking-wider text-zinc-400 mt-0.5 font-semibold">
                 Mins
               </p>
+
             </div>
 
             <div className="p-2 sm:p-3 rounded-xl bg-zinc-900/90 border border-amber-500/30">
+
               <span className="font-bebas text-2xl sm:text-4xl font-bold text-yellow-400">
                 {timeLeft.seconds}
               </span>
@@ -664,12 +646,15 @@ export default function Hero({
               <p className="text-[10px] uppercase tracking-wider text-zinc-400 mt-0.5 font-semibold">
                 Secs
               </p>
+
             </div>
 
           </div>
+
         </div>
 
       </div>
+
     </section>
   );
 }

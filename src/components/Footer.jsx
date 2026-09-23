@@ -23,7 +23,7 @@ export default function Footer({ onOpenRegister }) {
               </span>
             </div>
             <p className="text-zinc-400 text-xs max-w-md font-light leading-relaxed">
-              16 & 17 October 2026. The official inter-college arts and performance championship. 16 Oct: Danzora Dance Championship • 17 Oct: Battle of the Bands & Influencers Meet.
+              16 & 17 October 2026. The official inter-college arts and performance championship. 16 Oct: Danzora Dance Championship • 17 Oct: MUSIC β & Influencers Meet.
             </p>
             <div className="space-y-1 text-xs pt-1">
               <p className="text-white font-semibold flex items-center gap-1.5">
@@ -32,7 +32,7 @@ export default function Footer({ onOpenRegister }) {
               </p>
               <p className="text-zinc-300">K. Sai Mithil: <span className="font-mono text-amber-300 font-bold">8328070910</span></p>
               <p className="text-zinc-300">G. Roshan Siddarth: <span className="font-mono text-amber-300 font-bold">8328477757</span></p>
-              <p className="text-zinc-300">M. Hujith: <span className="font-mono text-amber-300 font-bold">7780111178</span></p>
+              <p className="text-zinc-300">T. K. Nawaz: <span className="font-mono text-amber-300 font-bold">8309407465</span></p>
             </div>
             <div className="flex items-center gap-4 pt-2">
               <img
@@ -45,7 +45,7 @@ export default function Footer({ onOpenRegister }) {
                 alt="Battle of the Bands"
                 className="w-10 h-10 rounded-lg object-cover border border-amber-500/30"
               />
-              <span className="text-[11px] text-amber-300/80 font-medium">Official UPI: 8328477757-2@axl</span>
+
             </div>
           </div>
 
@@ -54,9 +54,9 @@ export default function Footer({ onOpenRegister }) {
             <p className="font-bold text-white uppercase tracking-wider text-xs mb-3">Quick Navigation</p>
             <ul className="space-y-2">
               <li><a href="#danzora" className="hover:text-amber-300 transition-colors">Danzora (16 Oct Dance)</a></li>
-              <li><a href="#battle-of-bands" className="hover:text-amber-300 transition-colors">Battle of the Bands (17 Oct Music)</a></li>
+              <li><a href="#battle-of-bands" className="hover:text-amber-300 transition-colors">MUSIC β (17 Oct Music)</a></li>
               <li><a href="#influencers-card" className="hover:text-amber-300 transition-colors">Influencers Meet (17 Oct • 🔒 Soon)</a></li>
-              <li><a href="#prizes" className="hover:text-amber-300 transition-colors">Prize Bounties (₹25k+)</a></li>
+              <li><a href="#prizes" className="hover:text-amber-300 transition-colors">Prize Bounties (₹30k)</a></li>
               <li><a href="#rules" className="hover:text-amber-300 transition-colors">Official Regulations</a></li>
               <li><a href="#faq" className="hover:text-amber-300 transition-colors">FAQ & Coordinators</a></li>
             </ul>
@@ -77,7 +77,7 @@ export default function Footer({ onOpenRegister }) {
                 onClick={() => onOpenRegister('bob')}
                 className="w-full py-2.5 px-3.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-amber-200 text-xs font-bold text-left flex items-center justify-between transition-colors"
               >
-                <span>Battle of Bands (17 Oct)</span>
+                <span>MUSIC β (17 Oct)</span>
                 <span className="text-white font-mono font-black">₹899</span>
               </button>
               <div className="w-full py-2 px-3.5 rounded-xl bg-black/60 border border-zinc-800 text-zinc-400 text-xs font-semibold flex items-center justify-between">
