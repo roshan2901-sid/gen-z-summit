@@ -59,11 +59,11 @@ export default function Hero({
   }, []);
 
   const handleBookClick = () => {
-    if (onOpenRegister) {
-      onOpenRegister(
-        activeArena === 'bob' ? 'bob' : 'danzora'
-      );
-    }
+    window.open(
+      'https://app.studenttribe.in/events/genz-summit',
+      '_blank',
+      'noopener,noreferrer'
+    );
   };
 
   return (
@@ -178,20 +178,32 @@ export default function Hero({
             {/* SPACER */}
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
 
-            {/* RIGHT */}
-            <div className="lg:col-span-5 flex flex-col items-start lg:items-end text-left lg:text-right mt-6 lg:mt-0">
+            {/* RIGHT — STUDENT TRIBE */}
+            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center text-center lg:text-right mt-6 lg:mt-0">
 
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/75 border border-amber-400/60 text-amber-300 text-xs sm:text-sm font-bold tracking-wider uppercase mb-5 backdrop-blur-md shadow-[0_0_25px_rgba(245,158,11,0.3)]">
-                <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+              <div className="relative w-full max-w-[360px]">
 
-                <span className="tracking-widest font-black text-amber-200">
-                  ₹30,000+ CASH BOUNTY
-                </span>
+                <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full scale-75 pointer-events-none" />
+
+                <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-black/70 backdrop-blur-xl shadow-[0_0_45px_rgba(255,255,255,0.12)]">
+                  <img
+                    src="/assets/student_tribe.png"
+                    alt="Student Tribe"
+                    className="w-full h-auto object-contain block rounded-[32px]"
+                  />
+                </div>
+
               </div>
 
-              <p className="max-w-xs text-xs sm:text-sm text-zinc-300/90 font-bold uppercase tracking-[0.18em] leading-relaxed">
-                THE PREMIER COLLEGIATE CHAMPIONSHIP WHERE RHYTHM AND ROARING AMPS COLLIDE.
-              </p>
+              <div className="mt-5">
+                <p className="text-xs sm:text-sm text-zinc-200 font-black uppercase tracking-[0.18em]">
+                  OFFICIAL REGISTRATION PARTNER
+                </p>
+
+                <p className="text-[10px] sm:text-[11px] text-zinc-400 mt-1 uppercase tracking-wider">
+                  Book your GEN-Z Summit slot on Student Tribe
+                </p>
+              </div>
 
             </div>
 
@@ -240,11 +252,10 @@ export default function Hero({
                 : 'text-zinc-400 hover:text-amber-200 hover:bg-amber-950/40'
             }`}
           >
-            <Lock className="w-3.5 h-3.5 text-amber-400" />
             <span>Creators Nation (17 Oct)</span>
 
-            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">
-              Coming Soon
+            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+              EARLY BIRD ₹79
             </span>
           </button>
 
@@ -429,8 +440,7 @@ export default function Hero({
                 </span>
 
                 <span className="px-3 py-1 rounded-full bg-amber-500/20 border border-amber-400/50 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 font-mono">
-                  <Lock className="w-3 h-3 text-amber-400" />
-                  <span>LOCKED</span>
+                  <span className="text-amber-300 font-black">₹79</span>
                 </span>
 
               </div>
@@ -448,12 +458,8 @@ export default function Hero({
 
               </div>
 
-              <h3 className="font-syne text-2xl font-extrabold text-white mt-3 tracking-wider flex items-center gap-2">
-
-                <span>CREATOTRS NATION</span>
-
-                <Lock className="w-4 h-4 text-amber-400" />
-
+              <h3 className="font-syne text-2xl font-extrabold text-white mt-3 tracking-wider">
+                CREATORS NATION
               </h3>
 
               <p className="text-xs text-amber-300/90 font-semibold uppercase tracking-widest mt-1">
@@ -488,7 +494,7 @@ export default function Hero({
 
                 <Lock className="w-3.5 h-3.5 text-amber-400" />
 
-                <span>Coming Soon • Locked</span>
+                <span>EARLY BIRD • ₹79</span>
 
               </div>
 

@@ -35,7 +35,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
             </div>
 
             <p className="text-[10px] text-amber-200/70 tracking-widest uppercase font-semibold mt-1">
-              The Flagship Event of NSS
+              Co-Powered By Student Tribe
             </p>
           </div>
         </div>

@@ -30,6 +30,9 @@ export default function Footer({ onOpenRegister }) {
                 <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
                 <span>Event Coordinators:</span>
               </p>
+              <p className="text-zinc-300">Akash Reddy: <span className="font-mono text-amber-300 font-bold">7416208451</span></p>
+                    <p className="text-zinc-300">M. Akshith Reddy: <span className="font-mono text-amber-300 font-bold">8341353673</span></p>
+                     <p className="text-zinc-300">K. Y. Shashank: <span className="font-mono text-amber-300 font-bold">8790945868</span></p>
               <p className="text-zinc-300">K. Sai Mithil: <span className="font-mono text-amber-300 font-bold">8328070910</span></p>
               <p className="text-zinc-300">G. Roshan Siddarth: <span className="font-mono text-amber-300 font-bold">8328477757</span></p>
               <p className="text-zinc-300">T. K. Nawaz: <span className="font-mono text-amber-300 font-bold">8309407465</span></p>

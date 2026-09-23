@@ -46,6 +46,27 @@ export default function RulesAndFAQ({ onOpenRegister }) {
 
  const coordinators = [
   {
+    name: 'Akash Reddy',
+    role: 'Event Coordinator',
+    phone: '7416208451',
+    whatsapp:
+      'https://wa.me/917416208451?text=Hi%20Akash%20Reddy,%20inquiring%20about%20Gen-Z%20Summit',
+  },
+   {
+    name: 'M. Akshith Reddy',
+    role: 'Event Coordinator',
+    phone: '8341353673',
+    whatsapp:
+      'https://wa.me/918341353673?text=Hi%20Akshith%20Reddy,%20inquiring%20about%20Gen-Z%20Summit',
+  },
+  {
+    name: 'K. Y. Shashank',
+    role: 'Event Coordinator',
+    phone: '8790945868',
+    whatsapp:
+      'https://wa.me/918790945868?text=Hi%20Shashank,%20inquiring%20about%20Gen-Z%20Summit',
+  },
+  {
     name: 'K. Sai Mithil',
     role: 'Event Coordinator',
     phone: '8328070910',
@@ -67,31 +88,7 @@ export default function RulesAndFAQ({ onOpenRegister }) {
     phone: '8309407465',
     whatsapp:
       'https://wa.me/918309407465?text=Hi%20Nawaz,%20inquiring%20about%20Gen-Z%20Summit',
-  },
-
-  {
-    name: 'M. Akshith Reddy',
-    role: 'Event Coordinator',
-    phone: '8341353673',
-    whatsapp:
-      'https://wa.me/918341353673?text=Hi%20Akshith%20Reddy,%20inquiring%20about%20Gen-Z%20Summit',
-  },
-
-  {
-    name: 'Akash Reddy',
-    role: 'Event Coordinator',
-    phone: '7416208451',
-    whatsapp:
-      'https://wa.me/917416208451?text=Hi%20Akash%20Reddy,%20inquiring%20about%20Gen-Z%20Summit',
-  },
-
-  {
-    name: 'Shashank',
-    role: 'Event Coordinator',
-    phone: '8790945868',
-    whatsapp:
-      'https://wa.me/918790945868?text=Hi%20Shashank,%20inquiring%20about%20Gen-Z%20Summit',
-  },
+  }
 ];
 
   return (
