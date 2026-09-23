@@ -179,17 +179,17 @@ export default function Hero({
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
 
             {/* RIGHT — STUDENT TRIBE */}
-            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center text-center lg:text-right mt-6 lg:mt-0">
+            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center text-center lg:text-right mt-6 lg:mt-0 w-full">
 
-              <div className="relative w-full max-w-[360px]">
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 lg:ml-auto">
 
                 <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full scale-75 pointer-events-none" />
 
-                <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-black/70 backdrop-blur-xl shadow-[0_0_45px_rgba(255,255,255,0.12)]">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-white/20 bg-black/70 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] lg:ml-auto">
                   <img
                     src="/assets/student_tribe.png"
                     alt="Student Tribe"
-                    className="w-full h-auto object-contain block rounded-[32px]"
+                    className="w-full h-full object-cover block rounded-full"
                   />
                 </div>
 
