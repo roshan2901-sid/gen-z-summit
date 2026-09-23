@@ -12,7 +12,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
         <span className="flex h-1.5 w-1.5 rounded-full bg-amber-400 animate-ping"></span>
 
         <span className="font-semibold tracking-wider uppercase">
-          16 & 17 Oct 2026 • 16 Oct Dance (₹1099) • 17 Oct Music (₹899) • 17 Oct Influencers Meet (Coming Soon) • Official UPI: 8328477757-2@axl
+          16 & 17 Oct 2026 • 16 Oct Dance (₹1099) • 17 Oct Music (₹899) • 17 Oct Creators Nation (Coming Soon) • Official UPI: 8328477757-2@axl
         </span>
       </div>
 
@@ -84,7 +84,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
           >
             <span className="text-amber-400 text-[11px]">🔒</span>
 
-            <span>Influencers Meet (17 Oct)</span>
+            <span>Creators Nation (17 Oct)</span>
 
             <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
               Soon
@@ -192,7 +192,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
                   : 'bg-zinc-900 text-zinc-400 border border-zinc-800'
               }`}
             >
-              🔒 Influencers Meet (17 Oct)
+              🔒 Creators Nation (17 Oct)
             </button>
 
           </div>

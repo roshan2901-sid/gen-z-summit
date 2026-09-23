@@ -23,7 +23,7 @@ export default function Footer({ onOpenRegister }) {
               </span>
             </div>
             <p className="text-zinc-400 text-xs max-w-md font-light leading-relaxed">
-              16 & 17 October 2026. The official inter-college arts and performance championship. 16 Oct: Danzora Dance Championship • 17 Oct: MUSIC β & Influencers Meet.
+              16 & 17 October 2026. The official inter-college arts and performance championship. 16 Oct: Danzora Dance Championship • 17 Oct: MUSIC β & Creators Nation.
             </p>
             <div className="space-y-1 text-xs pt-1">
               <p className="text-white font-semibold flex items-center gap-1.5">
@@ -55,7 +55,7 @@ export default function Footer({ onOpenRegister }) {
             <ul className="space-y-2">
               <li><a href="#danzora" className="hover:text-amber-300 transition-colors">Danzora (16 Oct Dance)</a></li>
               <li><a href="#battle-of-bands" className="hover:text-amber-300 transition-colors">MUSIC β (17 Oct Music)</a></li>
-              <li><a href="#influencers-card" className="hover:text-amber-300 transition-colors">Influencers Meet (17 Oct • 🔒 Soon)</a></li>
+              <li><a href="#influencers-card" className="hover:text-amber-300 transition-colors">Creators Nation (17 Oct • 🔒 Soon)</a></li>
               <li><a href="#prizes" className="hover:text-amber-300 transition-colors">Prize Bounties (₹30k)</a></li>
               <li><a href="#rules" className="hover:text-amber-300 transition-colors">Official Regulations</a></li>
               <li><a href="#faq" className="hover:text-amber-300 transition-colors">FAQ & Coordinators</a></li>
@@ -81,7 +81,7 @@ export default function Footer({ onOpenRegister }) {
                 <span className="text-white font-mono font-black">₹899</span>
               </button>
               <div className="w-full py-2 px-3.5 rounded-xl bg-black/60 border border-zinc-800 text-zinc-400 text-xs font-semibold flex items-center justify-between">
-                <span>Influencers Meet (17 Oct)</span>
+                <span>Creators Nation (17 Oct)</span>
                 <span className="text-amber-400 text-[10px] font-mono uppercase">🔒 Locked</span>
               </div>
             </div>
