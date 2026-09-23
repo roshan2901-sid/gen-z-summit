@@ -431,7 +431,7 @@ export default function Hero({
 
               </div>
 
-              {/* Battle of Bands Emblem — FULL IMAGE */}
+              {/* creator of Bands Emblem — FULL IMAGE */}
               <div className="relative my-2 w-full max-w-[360px] rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-[0_0_30px_rgba(245,158,11,0.35)] group-hover:scale-[1.02] transition-transform duration-300 bg-black">
 
                 <img
@@ -509,21 +509,17 @@ export default function Hero({
 
               </div>
 
-              {/* Influencers Visual */}
-              <div className="relative my-2 w-48 h-48 sm:w-52 sm:h-52 rounded-2xl overflow-hidden border-2 border-amber-400/40 bg-gradient-to-br from-[#1c1405] via-[#100c05] to-[#08080c] flex flex-col items-center justify-center p-4 shadow-[0_0_35px_rgba(245,158,11,0.25)] group-hover:scale-105 transition-transform duration-300">
+              {/* Creators Nation Logo */}
+<div className="relative my-2 w-full max-w-[360px] rounded-2xl overflow-hidden border-2 border-amber-400/50 bg-black shadow-[0_0_35px_rgba(245,158,11,0.35)] group-hover:scale-[1.02] transition-transform duration-300">
+  <img
+    src="/assets/creators nation.png"
+    alt="Creators Nation"
+    className="w-full h-auto object-contain block"
+  />
 
-                <div className="relative w-24 h-24 rounded-full bg-amber-500/15 border border-amber-400/40 flex items-center justify-center mb-2 shadow-[0_0_25px_rgba(245,158,11,0.35)]">
-
-                  <Crown
-                    className="w-10 h-10 text-amber-400 animate-bounce"
-                    style={{ animationDuration: '3s' }}
-                  />
-
-                  <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-black/90 border border-amber-400 flex items-center justify-center text-amber-400 shadow-md">
-                    <Lock className="w-4 h-4" />
-                  </div>
-
-                </div>
+  {/* Subtle cinematic overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+</div>
 
                 <span className="text-[11px] font-mono tracking-widest text-amber-300 font-bold uppercase bg-amber-950/80 px-2.5 py-0.5 rounded-full border border-amber-500/30">
                   VIP ACCESS ONLY
