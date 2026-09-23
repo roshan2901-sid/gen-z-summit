@@ -8,7 +8,6 @@ import {
   Calendar,
   MapPin,
   Users,
-  Lock,
 } from 'lucide-react';
 
 export default function Hero({
@@ -178,26 +177,7 @@ export default function Hero({
             {/* SPACER */}
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
 
-            {/* RIGHT — STUDENT TRIBE */}
-            <div className="absolute top-6 right-5 sm:top-8 sm:right-8 lg:top-10 lg:right-12 z-20 flex flex-col items-end text-right">
 
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[76px] lg:h-[76px]">
-                <div className="absolute inset-0 bg-red-500/20 blur-xl rounded-full scale-75 pointer-events-none" />
-
-                <div className="relative w-full h-full rounded-full overflow-hidden border border-white/20 bg-black/70 shadow-[0_0_20px_rgba(255,255,255,0.12)]">
-                  <img
-                    src="/assets/student_tribe.png"
-                    alt="Student Tribe"
-                    className="w-full h-full object-cover block rounded-full"
-                  />
-                </div>
-              </div>
-
-              <p className="mt-2 text-[8px] sm:text-[9px] lg:text-[10px] text-zinc-200 font-black uppercase tracking-[0.12em]">
-                OFFICIAL REGISTRATION PARTNER
-              </p>
-
-            </div>
 
           </div>
         </div>
@@ -458,37 +438,20 @@ export default function Hero({
                 Creators, Artists &amp; Youth Icons
               </p>
 
-              <div className="w-full my-4 p-3.5 rounded-xl bg-gradient-to-r from-amber-950/40 to-zinc-900 border border-amber-500/30 text-left">
-
-                <div className="flex items-center justify-between mb-1.5">
-
-                  <span className="text-[10px] uppercase text-amber-300 font-bold tracking-wider flex items-center gap-1">
-
-                    <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-
-                    <span>Exclusive Showcase</span>
-
-                  </span>
-
-                  <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800">
-                    Phase 2 Reveal
-                  </span>
-
-                </div>
-
-                <p className="text-[11px] text-zinc-300 leading-snug">
-                  Red carpet arrivals, creator panels, exclusive photo-ops, and private networking lounge.
-                </p>
-
-              </div>
-
-              <div className="w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider bg-black/80 text-amber-300/80 border border-amber-500/40 flex items-center justify-center gap-2 cursor-not-allowed shadow-inner backdrop-blur-md">
-
-                <Lock className="w-3.5 h-3.5 text-amber-400" />
-
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(
+                    'https://app.studenttribe.in/events/genz-summit',
+                    '_blank',
+                    'noopener,noreferrer'
+                  );
+                }}
+                className="w-full py-3 mt-5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 text-black border border-yellow-200 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(245,158,11,0.35)] hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              >
                 <span>EARLY BIRD • ₹79</span>
-
-              </div>
+                <ArrowRight className="w-4 h-4" />
+              </button>
 
             </div>
           </div>
