@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import { Menu, X, Sparkles } from 'lucide-react';
 
-export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
+export default function Navbar({
+  activeArena,
+  onSelectArena,
+  onOpenRegister,
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleBookSlot = () => {
+    window.open(
+      'https://app.studenttribe.in/events/genz-summit',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-[#08080b]/90 backdrop-blur-xl border-b border-amber-500/25">
@@ -12,7 +24,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
         <span className="flex h-1.5 w-1.5 rounded-full bg-amber-400 animate-ping"></span>
 
         <span className="font-semibold tracking-wider uppercase">
-          16 & 17 Oct 2026 • 16 Oct Dance (₹1099) • 17 Oct Music (₹899) • 17 Oct Creators Nation (Coming Soon) • Official UPI: 8328477757-2@axl
+          16 & 17 Oct 2026 • 16 Oct Dance (₹1099) • 17 Oct Music (₹899) • 17 Oct Creators Nation (₹79)
         </span>
       </div>
 
@@ -34,9 +46,18 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
               </span>
             </div>
 
-            <p className="text-[10px] text-amber-200/70 tracking-widest uppercase font-semibold mt-1">
-              Co-Powered By Student Tribe
-            </p>
+            {/* Co-Powered By Student Tribe + Logo */}
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-[10px] sm:text-[11px] text-amber-200/70 tracking-widest uppercase font-semibold">
+                CO-POWERED BY STUDENT TRIBE
+              </span>
+
+              <img
+                src="/assets/student_tribe.png"
+                alt="Student Tribe"
+                className="w-6 h-6 rounded-full object-cover border border-amber-400/30"
+              />
+            </div>
           </div>
         </div>
 
@@ -73,21 +94,19 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
             </span>
           </button>
 
-          {/* Influencers Meet */}
+          {/* Creators Nation */}
           <button
             onClick={() => onSelectArena('influencers')}
             className={`px-3 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
               activeArena === 'influencers'
                 ? 'bg-gradient-to-r from-amber-500 to-yellow-600 text-black shadow-[0_0_15px_rgba(245,158,11,0.5)]'
-                : 'text-zinc-400 hover:text-amber-200 hover:bg-amber-950/40'
+                : 'text-amber-200/80 hover:text-white hover:bg-amber-950/40'
             }`}
           >
-            <span className="text-amber-400 text-[11px]">🔒</span>
-
             <span>Creators Nation (17 Oct)</span>
 
             <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
-              Soon
+              ₹79
             </span>
           </button>
 
@@ -123,9 +142,7 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
         <div className="flex items-center gap-2 shrink-0">
 
           <button
-            onClick={() =>
-              onOpenRegister(activeArena === 'bob' ? 'bob' : 'danzora')
-            }
+            onClick={handleBookSlot}
             className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 hover:brightness-110 text-black shadow-[0_0_25px_rgba(245,158,11,0.45)] border border-yellow-200 hover:scale-105 active:scale-95 transition-all"
           >
             <Sparkles className="w-3.5 h-3.5 fill-black" />
@@ -189,10 +206,10 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
               className={`py-2 px-3 rounded-lg text-xs font-bold text-center ${
                 activeArena === 'influencers'
                   ? 'bg-amber-500 text-black'
-                  : 'bg-zinc-900 text-zinc-400 border border-zinc-800'
+                  : 'bg-zinc-900 text-amber-200 border border-zinc-800'
               }`}
             >
-              🔒 Creators Nation (17 Oct)
+              Creators Nation (17 Oct • ₹79)
             </button>
 
           </div>
@@ -232,6 +249,16 @@ export default function Navbar({ activeArena, onSelectArena, onOpenRegister }) {
             </a>
 
           </nav>
+
+          {/* Mobile Book Slot */}
+          <button
+            onClick={handleBookSlot}
+            className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 text-black shadow-[0_0_20px_rgba(245,158,11,0.35)]"
+          >
+            <Sparkles className="w-4 h-4 fill-black" />
+            Book Your Slot
+          </button>
+
         </div>
       )}
     </header>
