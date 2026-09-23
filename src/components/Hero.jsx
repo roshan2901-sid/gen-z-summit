@@ -179,13 +179,13 @@ export default function Hero({
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
 
             {/* RIGHT — STUDENT TRIBE */}
-            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-center text-center lg:text-right mt-6 lg:mt-0 w-full">
+            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-start text-center lg:text-right mt-2 lg:mt-0 w-full">
 
-              <div className="relative w-24 h-24 sm:w-28 sm:h-28 lg:ml-auto">
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:ml-auto">
 
-                <div className="absolute inset-0 bg-red-500/20 blur-3xl rounded-full scale-75 pointer-events-none" />
+                <div className="absolute inset-0 bg-red-500/20 blur-2xl rounded-full scale-75 pointer-events-none" />
 
-                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-white/20 bg-black/70 backdrop-blur-xl shadow-[0_0_30px_rgba(255,255,255,0.15)] lg:ml-auto">
+                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-white/20 bg-black/70 backdrop-blur-xl shadow-[0_0_25px_rgba(255,255,255,0.15)] lg:ml-auto">
                   <img
                     src="/assets/student_tribe.png"
                     alt="Student Tribe"
@@ -195,12 +195,12 @@ export default function Hero({
 
               </div>
 
-              <div className="mt-5">
-                <p className="text-xs sm:text-sm text-zinc-200 font-black uppercase tracking-[0.18em]">
+              <div className="mt-3 lg:mt-3">
+                <p className="text-[11px] sm:text-xs text-zinc-200 font-black uppercase tracking-[0.16em]">
                   OFFICIAL REGISTRATION PARTNER
                 </p>
 
-                <p className="text-[10px] sm:text-[11px] text-zinc-400 mt-1 uppercase tracking-wider">
+                <p className="text-[9px] sm:text-[10px] text-zinc-400 mt-1 uppercase tracking-wider">
                   Book your GEN-Z Summit slot on Student Tribe
                 </p>
               </div>
