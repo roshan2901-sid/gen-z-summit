@@ -179,31 +179,23 @@ export default function Hero({
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
 
             {/* RIGHT — STUDENT TRIBE */}
-            <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-start text-center lg:text-right mt-2 lg:mt-0 w-full">
+            <div className="absolute top-6 right-5 sm:top-8 sm:right-8 lg:top-10 lg:right-12 z-20 flex flex-col items-end text-right">
 
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 lg:ml-auto">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-[76px] lg:h-[76px]">
+                <div className="absolute inset-0 bg-red-500/20 blur-xl rounded-full scale-75 pointer-events-none" />
 
-                <div className="absolute inset-0 bg-red-500/20 blur-2xl rounded-full scale-75 pointer-events-none" />
-
-                <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-white/20 bg-black/70 backdrop-blur-xl shadow-[0_0_25px_rgba(255,255,255,0.15)] lg:ml-auto">
+                <div className="relative w-full h-full rounded-full overflow-hidden border border-white/20 bg-black/70 shadow-[0_0_20px_rgba(255,255,255,0.12)]">
                   <img
                     src="/assets/student_tribe.png"
                     alt="Student Tribe"
                     className="w-full h-full object-cover block rounded-full"
                   />
                 </div>
-
               </div>
 
-              <div className="mt-3 lg:mt-3">
-                <p className="text-[11px] sm:text-xs text-zinc-200 font-black uppercase tracking-[0.16em]">
-                  OFFICIAL REGISTRATION PARTNER
-                </p>
-
-                <p className="text-[9px] sm:text-[10px] text-zinc-400 mt-1 uppercase tracking-wider">
-                  Book your GEN-Z Summit slot on Student Tribe
-                </p>
-              </div>
+              <p className="mt-2 text-[8px] sm:text-[9px] lg:text-[10px] text-zinc-200 font-black uppercase tracking-[0.12em]">
+                OFFICIAL REGISTRATION PARTNER
+              </p>
 
             </div>
 
