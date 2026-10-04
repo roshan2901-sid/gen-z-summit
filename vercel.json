@@ -1,9 +1,4 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://gen-z-summit.vercel.app/$1",
-      "permanent": true
-    }
+ {"rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
