@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, FileText } from 'lucide-react';
 
 export default function Navbar({
   activeArena,
@@ -136,6 +136,17 @@ export default function Navbar({
             FAQ
           </a>
 
+          {/* Brochure Link */}
+          <a
+            href="/genz_summit_brochure.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-bold uppercase tracking-wider text-amber-300 hover:text-white transition-colors flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 hover:border-amber-400"
+          >
+            <FileText className="w-3.5 h-3.5 text-amber-400" />
+            <span>Brochure</span>
+          </a>
+
         </nav>
 
         {/* CTA */}
@@ -225,14 +236,6 @@ export default function Navbar({
             </a>
 
             <a
-              href="#schedule"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2 rounded-lg text-sm font-semibold text-zinc-300 hover:bg-zinc-900 hover:text-amber-400"
-            >
-              Schedule (16 & 17 Oct)
-            </a>
-
-            <a
               href="#rules"
               onClick={() => setMobileMenuOpen(false)}
               className="px-3 py-2 rounded-lg text-sm font-semibold text-zinc-300 hover:bg-zinc-900 hover:text-amber-400"
@@ -246,6 +249,17 @@ export default function Navbar({
               className="px-3 py-2 rounded-lg text-sm font-semibold text-zinc-300 hover:bg-zinc-900 hover:text-amber-400"
             >
               FAQ & Coordinators
+            </a>
+
+            <a
+              href="/genz_summit_brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2 rounded-lg text-sm font-bold text-amber-300 hover:bg-zinc-900 hover:text-white flex items-center gap-2"
+            >
+              <FileText className="w-4 h-4 text-amber-400" />
+              <span>Official Brochure (PDF)</span>
             </a>
 
           </nav>

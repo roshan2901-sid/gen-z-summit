@@ -8,6 +8,8 @@ import {
   Calendar,
   MapPin,
   Users,
+  FileText,
+  Download,
 } from 'lucide-react';
 
 export default function Hero({
@@ -162,22 +164,32 @@ export default function Hero({
 
               </div>
 
+              {/* ACTION BUTTONS (Book Slot + Official Brochure PDF) */}
               <div className="flex flex-wrap items-center gap-4">
                 <button
                   onClick={handleBookClick}
-                  className="px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 text-black font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_35px_rgba(245,158,11,0.6)] hover:shadow-[0_0_55px_rgba(245,158,11,0.9)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 group"
+                  className="px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-400 text-black font-black text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_35px_rgba(245,158,11,0.6)] hover:shadow-[0_0_55px_rgba(245,158,11,0.9)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 group cursor-pointer"
                 >
                   <span>BOOK YOUR SLOT</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
+
+                <a
+                  href="/genz_summit_brochure.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3.5 rounded-full bg-black/60 hover:bg-black/90 text-amber-300 hover:text-white font-bold text-xs sm:text-sm uppercase tracking-wider border border-amber-500/40 hover:border-amber-400 backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2 group shadow-[0_0_20px_rgba(245,158,11,0.15)]"
+                >
+                  <FileText className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
+                  <span>OFFICIAL BROCHURE</span>
+                  <Download className="w-3.5 h-3.5 opacity-70 group-hover:translate-y-0.5 transition-transform" />
+                </a>
               </div>
 
             </div>
 
             {/* SPACER */}
             <div className="hidden lg:block lg:col-span-1 pointer-events-none" />
-
-
 
           </div>
         </div>
